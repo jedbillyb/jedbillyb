@@ -1,16 +1,16 @@
-# hey, i'm jed 👋
+# hellooo, i'm jed 👋
 
 **builder · trader · tinkerer · based in hawkes bay, nz**
 
 ---
 
-i build things that scratch my own itch — trading bots, discord bots, homelab infra, and the occasional school project that gets way too out of hand.
+i build things that scratch my own itch - trading bots, discord bots, homelab infra, and the occasional school project.
 
 currently watching `$RKLB` `$NVDA` `$NBIS` and `BTC` 📈
 
 ---
 
-### 🔧 things i'm working on
+### things i'm working on
 
 | project | stack | what it does |
 |---|---|---|
@@ -21,7 +21,7 @@ currently watching `$RKLB` `$NVDA` `$NBIS` and `BTC` 📈
 
 ---
 
-### 🛠️ stack
+### stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -31,7 +31,7 @@ currently watching `$RKLB` `$NVDA` `$NBIS` and `BTC` 📈
 
 ---
 
-### 📊 github stats
+### github stats
 
 ![jedbillyb's GitHub stats](https://github-readme-stats.vercel.app/api?username=jedbillyb&show_icons=true&theme=default&hide_border=true&count_private=true)
 
@@ -39,11 +39,11 @@ currently watching `$RKLB` `$NVDA` `$NBIS` and `BTC` 📈
 
 ---
 
-### 📡 elsewhere
+### elsewhere
 
-- 🌐 [jedbillyb.com](https://jedbillyb.com)
-- 📍 hawkes bay, nz — about 30km from anything useful
-- 🚀 watching rklb go to the moon
+-  [jedbillyb.com](https://jedbillyb.com)
+-  hawkes bay, nz — about 30km from anything useful
+-  watching rklb go to the moon
 
 ---
 
