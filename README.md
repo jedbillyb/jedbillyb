@@ -15,8 +15,8 @@ currently watching `$RKLB` `$NVDA` `$NBIS` and `BTC` 📈
 | project | stack | what it does |
 |---|---|---|
 | [nz-vehicle-finder](https://github.com/jedbillyb/nz-vehicle-finder) | TypeScript | search & filter NZ vehicle listings |
-| [grow_a_garden_discord_bot](https://github.com/jedbillyb/grow_a_garden_discord_bot) | JavaScript | discord automation for the garden |
-| [vc_discord_bot](https://github.com/jedbillyb/vc_discord_bot) | JavaScript | voice channel utilities |
+| [grow-a-garden-discord-notification-bot](https://github.com/jedbillyb/grow-a-garden-discord-notification-bot) | JavaScript | discord automation for the garden |
+| [vc-discord-notification-bot](https://github.com/jedbillyb/vc-discord-notification-bot) | JavaScript | voice channel utilities |
 | [jedbillyb.com](https://github.com/jedbillyb/jedbillyb.com) | SCSS | my personal site |
 
 ---
