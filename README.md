@@ -34,9 +34,8 @@ currently watching `$RKLB` `$NVDA` `$NBIS` and `BTC` 📈
 ---
 
 ### github stats
-
-![jedbillyb's GitHub stats](https://github-readme-stats.vercel.app/api?username=jedbillyb&show_icons=true&theme=default&hide_border=true&count_private=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jedbillyb&layout=compact&hide_border=true&theme=default)
+![jedbillyb's GitHub stats](https://github-readme-stats-ten-mu-80.vercel.app/api?username=jedbillyb&show_icons=true&theme=dark&hide_border=true&count_private=true)
+![Top Langs](https://github-readme-stats-ten-mu-80.vercel.app/api/top-langs/?username=jedbillyb&layout=compact&hide_border=true&theme=dark)
 
 ---
 
