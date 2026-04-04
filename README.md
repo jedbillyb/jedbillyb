@@ -44,5 +44,5 @@ currently watching `$RKLB` `$NVDA` `$NBIS` and `BTC` 📈
 ### elsewhere
 
 - [jedbillyb.com](https://jedbillyb.com)
-- hawkes bay, nz — about 30km from anything useful
+- hawkes bay, nz - about 30km from anything useful
 - watching rklb go to the moon
