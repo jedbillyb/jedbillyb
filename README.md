@@ -13,6 +13,7 @@ currently watching `$RKLB` `$NVDA` `$NBIS` and `BTC` 📈
 
 | project | stack | what it does |
 |---|---|---|
+| [ghook](https://github.com/jedbillyb/ghook) | JavaScript · Express | github → discord webhook bridge |
 | [nz-vehicle-finder](https://github.com/jedbillyb/nz-vehicle-finder) | React · TypeScript · Express · SQLite | search & filter NZ vehicle listings |
 | [Desmos-Text-Input-Output-Tool](https://github.com/jedbillyb/Desmos-Text-Input-Output-Tool) | JavaScript | chrome/firefox extension — import/export Desmos graphs as JSON |
 | [vc-discord-notification-bot](https://github.com/jedbillyb/vc-discord-notification-bot) | JavaScript · Discord.js | voice channel join/leave/switch notifications |
