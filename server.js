@@ -28,7 +28,7 @@ app.get('/projects', (req, res) => {
   const width = 480;
   const rowHeight = 40;
   const headerHeight = 35;
-  const height = headerHeight + (MY_PROJECTS.length * rowHeight) + 15;
+  const height = headerHeight + (MY_PROJECTS.length * rowHeight);
 
   let rows = MY_PROJECTS.map((p, i) => `
     <tr class="project-row" style="animation-delay: ${0.1 + (i * 0.1)}s;">
@@ -101,5 +101,5 @@ app.get('/projects', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(\`Project Table Server running on :\${PORT}\`);
+  console.log(`Project Table Server running on :\${PORT}`);
 });
