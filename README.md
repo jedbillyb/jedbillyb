@@ -20,15 +20,7 @@ i build things that scratch my own itch - trading bots, discord bots, browser ex
 
 ### things i'm working on
 
-| project | stack | what it does |
-|---|---|---|
-| [ticker-svg](https://github.com/jedbillyb/stock-banner-svg-generator) | Node.js · Express | live animated market ticker for github profiles |
-| [ghook](https://github.com/jedbillyb/ghook) | JavaScript · Express | github → discord webhook bridge |
-| [nz-vehicle-finder](https://github.com/jedbillyb/nz-vehicle-finder) | React · TypeScript · Express · SQLite | search & filter NZ vehicle listings |
-| [Desmos-Text-Input-Output-Tool](https://github.com/jedbillyb/Desmos-Text-Input-Output-Tool) | JavaScript | chrome/firefox extension — import/export Desmos graphs as JSON |
-| [vc-discord-notification-bot](https://github.com/jedbillyb/vc-discord-notification-bot) | JavaScript · Discord.js | voice channel join/leave/switch notifications |
-| [jedbillyb.com](https://github.com/jedbillyb/jedbillyb.com) | HTML · SCSS | personal site |
-| [faultline mc](https://discord.jedbillyb.com) | PaperMC · Shell | minecraft smp community server |
+![My Projects](http://server.jedbillyb.com/projects)
 
 
 ---
