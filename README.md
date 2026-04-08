@@ -5,7 +5,7 @@
 
 i build things that scratch my own itch - trading bots, discord bots, browser extensions, and the occasional school project.
 
-[![Market Ticker](https://server.jedbillyb.com:3001/banner)](https://github.com/jedbillyb/stock-banner-svg-generator)
+[![Market Ticker](http://server.jedbillyb.com/banner)](https://github.com/jedbillyb/stock-banner-svg-generator)
 
 ---
 
