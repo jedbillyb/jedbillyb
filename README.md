@@ -14,13 +14,13 @@ i build things that scratch my own itch - trading bots, discord bots, browser ex
 ##### [jedbillyb.com](https://jedbillyb.com)
 ---
 ### investor in
-[![Market Ticker](http://server.jedbillyb.com/banner)](https://github.com/jedbillyb/stock-banner-svg-generator)
+[![Market Ticker](http://server.jedbillyb.com/banner?v=2)](https://github.com/jedbillyb/ticker-svg-generator)
 
 ---
 
 ### things i'm working on
 
-![My Projects](http://server.jedbillyb.com/projects)
+![My Projects](http://server.jedbillyb.com/projects?v=2)
 
 
 ---
