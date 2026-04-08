@@ -20,8 +20,7 @@ i build things that scratch my own itch - trading bots, discord bots, browser ex
 
 ### things i'm working on
 
-![My Projects](http://server.jedbillyb.com/projects?v=2)
-
+![My Projects](http://server.jedbillyb.com/projects?v=4)
 
 ---
 
