@@ -40,6 +40,8 @@ currently watching `$RKLB` `$NVDA` `$NBIS` and `BTC` 📈
   <img src="https://github-readme-stats-ten-mu-80.vercel.app/api/top-langs/?username=jedbillyb&layout=compact&hide_border=true&theme=dark" height="160"/>
 </p>
 
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=jedbillyb&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
 ---
 
 ### elsewhere
