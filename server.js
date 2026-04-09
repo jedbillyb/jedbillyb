@@ -1,105 +1,117 @@
 import express from 'express';
-
 const app = express();
 const PORT = process.env.PORT || 3002;
 
+// Global — change these to resize the whole card
+const W        = 528; // was 480
+const HEADER_H = 36;
+const ROW_H    = 36;
+
 const MY_PROJECTS = [
-  { name: 'ticker-svg', stack: 'Node.js · Express', desc: 'live animated market ticker for github profiles', link: 'https://github.com/jedbillyb/ticker-svg-generator' },
-  { name: 'ghook', stack: 'JavaScript · Express', desc: 'github → discord webhook bridge', link: 'https://github.com/jedbillyb/ghook' },
-  { name: 'nz-vehicle-finder', stack: 'React · TS · SQLite', desc: 'search & filter NZ vehicle listings', link: 'https://github.com/jedbillyb/nz-vehicle-finder' },
-  { name: 'Desmos-Tool', stack: 'JavaScript', desc: 'chrome/firefox extension for Desmos graphs', link: 'https://github.com/jedbillyb/Desmos-Text-Input-Output-Tool' },
-  { name: 'vc-notif-bot', stack: 'JS · Discord.js', desc: 'voice channel join/leave notifications', link: 'https://github.com/jedbillyb/vc-discord-notification-bot' },
-  { name: 'faultline mc', stack: 'PaperMC · Shell', desc: 'minecraft smp community server', link: 'https://discord.jedbillyb.com' }
+  { name: 'ticker-svg',        stack: 'Node.js · Express',    desc: 'live animated market ticker for github profiles' },
+  { name: 'ghook',             stack: 'JavaScript · Express', desc: 'github → discord webhook bridge' },
+  { name: 'nz-vehicle-finder', stack: 'React · TS · SQLite',  desc: 'search & filter NZ vehicle listings' },
+  { name: 'Desmos-Tool',       stack: 'JavaScript',           desc: 'chrome/firefox extension for Desmos graphs' },
+  { name: 'vc-notif-bot',      stack: 'JS · Discord.js',      desc: 'voice channel join/leave notifications' },
+  { name: 'faultline mc',      stack: 'PaperMC · Shell',      desc: 'minecraft smp community server' },
 ];
 
-function escapeXml(unsafe) {
-  return unsafe.replace(/[<>&"']/g, (c) => {
-    switch (c) {
-      case '<': return '&lt;';
-      case '>': return '&gt;';
-      case '&': return '&amp;';
-      case '"': return '&quot;';
-      case "'": return '&apos;';
-    }
-  });
+const FONT = `-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif`;
+const PAD  = 12;
+
+function escapeXml(s) {
+  return s.replace(/[<>&"']/g, c =>
+    ({ '<':'&lt;', '>':'&gt;', '&':'&amp;', '"':'&quot;', "'":'&apos;' }[c])
+  );
 }
 
 app.get('/projects', (req, res) => {
-  const width = 480;
-  const rowHeight = 40;
-  const headerHeight = 35;
-  const height = headerHeight + (MY_PROJECTS.length * rowHeight);
+  const H       = HEADER_H + MY_PROJECTS.length * ROW_H;
 
-  let rows = MY_PROJECTS.map((p, i) => `
-    <tr class="project-row" style="animation-delay: ${0.1 + (i * 0.1)}s;">
-      <td style="padding: 8px 12px; color: #58a6ff; font-weight: 600; font-size: 12px;">${escapeXml(p.name)}</td>
-      <td style="padding: 8px 12px; color: #8b949e; font-size: 11px;">${escapeXml(p.stack)}</td>
-      <td style="padding: 8px 12px; color: #c9d1d9; font-size: 13px;">${escapeXml(p.desc)}</td>
-    </tr>
-  `).join('');
+  const COLS = [
+    { label: 'Project',      x: 0,   w: 120, fill: '#58a6ff', weight: '600' },
+    { label: 'Stack',        x: 120, w: 144, fill: '#c9d1d9', weight: '400' },
+    { label: 'What it does', x: 264, w: 336, fill: '#c9d1d9', weight: '400' }, // 480→600, extra 120 all goes here
+  ];
 
-  const svg = `
-    <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <foreignObject width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          <style>
-            @keyframes slideUp {
-              from { opacity: 0; transform: translateY(10px); }
-              to { opacity: 1; transform: translateY(0); }
-            }
-            .container {
-              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-              background: #151515;
-              border: 1px solid #30363d;
-              border-radius: 6px;
-              overflow: hidden;
-            }
-            table {
-              width: 100%;
-              border-collapse: collapse;
-              text-align: left;
-            }
-            th {
-              background: #1c1c1c;
-              color: #8b949e;
-              font-size: 10px;
-              font-weight: 600;
-              text-transform: uppercase;
-              padding: 10px 12px;
-              border-bottom: 1px solid #30363d;
-            }
-            .project-row {
-              border-bottom: 1px solid #21262d;
-              animation: slideUp 0.5s ease-out both;
-            }
-            .project-row:last-child {
-              border-bottom: none;
-            }
-          </style>
-          <div class="container">
-            <table>
-              <thead>
-                <tr>
-                  <th style="width: 25%;">Project</th>
-                  <th style="width: 25%;">Stack</th>
-                  <th style="width: 50%;">What it does</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${rows}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </foreignObject>
-    </svg>
-  `;
+  // Per-column clip paths — tall enough to cover any y-translate during animation
+  const clipPaths = COLS.map((c, i) => `
+    <clipPath id="c${i}">
+      <rect x="${c.x + PAD}" y="-${H}" width="${c.w - PAD * 2}" height="${H * 4}"/>
+    </clipPath>`
+  ).join('');
+
+  // Header row
+  const headerCells = COLS.map((c, i) => `
+    <text clip-path="url(#c${i})"
+      x="${c.x + PAD}" y="${HEADER_H / 2 + 4}"
+      font-family="${FONT}" font-size="10" font-weight="600"
+      fill="#8b949e" text-anchor="start">
+      ${escapeXml(c.label.toUpperCase())}
+    </text>`
+  ).join('');
+
+  // Data rows — each in a <g> with SMIL slideUp + fade
+  const rows = MY_PROJECTS.map((p, i) => {
+    const rowY  = HEADER_H + i * ROW_H;
+    const textY = rowY + ROW_H / 2 + 4;
+    const begin = `${(0.05 + i * 0.04).toFixed(2)}s`; // was 0.08
+    const vals  = [p.name, p.stack, p.desc];
+
+    const texts = COLS.map((c, ci) => `
+      <text clip-path="url(#c${ci})"
+        x="${c.x + PAD}" y="${textY}"
+        font-family="${FONT}" font-size="12" font-weight="${c.weight}"
+        fill="${c.fill}" text-anchor="start">
+        ${escapeXml(vals[ci])}
+      </text>`
+    ).join('');
+
+    return `
+    <g opacity="0">
+      <rect x="0" y="${rowY}" width="${W}" height="${ROW_H}" fill="#151515"/>
+      <line x1="0" y1="${rowY + ROW_H}" x2="${W}" y2="${rowY + ROW_H}"
+            stroke="#21262d" stroke-width="1"/>
+      ${texts}
+
+      <animate attributeName="opacity"
+        from="0" to="1"
+        begin="${begin}" dur="0.4s" fill="freeze"
+        calcMode="spline" keyTimes="0;1" keySplines="0.4 0 0.2 1"/>
+
+      <animateTransform attributeName="transform" type="translate"
+        from="0 6" to="0 0" additive="sum"
+        begin="${begin}" dur="0.3s" fill="freeze"
+        calcMode="spline" keyTimes="0;1" keySplines="0.22 1 0.36 1"/>
+    </g>`;
+  }).join('');
+
+  const svg = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"
+  fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="card">
+      <rect width="${W}" height="${H}" rx="6" ry="6" fill="white"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#card)">
+    <!-- Base background -->
+    <rect width="${W}" height="${H}" fill="#151515"/>
+
+    <!-- Header -->
+    <rect width="${W}" height="${HEADER_H}" fill="#1c1c1c"/>
+    <line x1="0" y1="${HEADER_H}" x2="${W}" y2="${HEADER_H}"
+          stroke="#30363d" stroke-width="1"/>
+    ${headerCells}
+
+    <!-- Rows -->
+    ${rows}
+  </g>
+</svg>`;
 
   res.setHeader('Content-Type', 'image/svg+xml');
-  res.setHeader('Cache-Control', 'public, max-age=3600');
+  res.setHeader('Cache-Control', 'no-cache, must-revalidate'); // fresh on each README load
   res.send(svg);
 });
 
-app.listen(PORT, () => {
-  console.log(`Project Table Server running on :\${PORT}`);
-});
+app.listen(PORT, () => console.log(`running on :${PORT}`));
