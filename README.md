@@ -1,13 +1,4 @@
-<table width="100%">
-  <tr>
-    <td align="left"><h1>hello, i'm jed 👋</h1></td>
-    <td align="right">
-      <a href="https://jedbillyb.com">
-        <img src="https://img.shields.io/badge/jedbillyb.com-000?style=for-the-badge&logo=archlinux&logoColor=blue" />
-      </a>
-    </td>
-  </tr>
-</table>
+# hello, i'm jed 👋 <img align="right" src="https://img.shields.io/badge/jedbillyb.com-000?style=for-the-badge&logo=archlinux&logoColor=blue" />
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
