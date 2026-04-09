@@ -1,4 +1,4 @@
-# hello, i'm jed 👋
+# hello, i'm jed 👋                        ![Website](https://img.shields.io/badge/jedbillyb.com-000?style=for-the-badge&logo=archlinux&logoColor=blue)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -11,7 +11,6 @@
 
 i build things that scratch my own itch - trading bots, discord bots, browser extensions, and the occasional school project.
 
-![Website](https://img.shields.io/badge/jedbillyb.com-000?style=for-the-badge&logo=archlinux&logoColor=blue)
 ---
 ### investor in
 [![Market Ticker](http://server.jedbillyb.com/banner?v=2)](https://github.com/jedbillyb/ticker-svg-generator)
