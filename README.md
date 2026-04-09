@@ -11,7 +11,7 @@
 
 i build things that scratch my own itch - trading bots, discord bots, browser extensions, and the occasional school project.
 
-##### [jedbillyb.com](https://jedbillyb.com)
+![Website](https://img.shields.io/badge/jedbillyb.com-000?style=for-the-badge&logo=archlinux&logoColor=blue)
 ---
 ### investor in
 [![Market Ticker](http://server.jedbillyb.com/banner?v=2)](https://github.com/jedbillyb/ticker-svg-generator)
