@@ -13,13 +13,13 @@ i build things that scratch my own itch - trading bots, discord bots, browser ex
 
 ---
 ### investor in
-[![Market Ticker](http://server.jedbillyb.com/banner?v=2)](https://github.com/jedbillyb/ticker-svg-generator)
+[![Market Ticker](http://server.jedbillyb.com/banner)](https://github.com/jedbillyb/ticker-svg-generator)
 
 ---
 
 ### things i'm working on
 
-![My Projects](http://server.jedbillyb.com/projects?v=2)
+![My Projects](http://server.jedbillyb.com/projects)
 
 ---
 
@@ -29,4 +29,4 @@ i build things that scratch my own itch - trading bots, discord bots, browser ex
   <img src="https://github-readme-stats-ten-mu-80.vercel.app/api/top-langs/?username=jedbillyb&layout=compact&hide_border=true&theme=dark" height="160"/>
 </p>
 
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=jedbillyb&theme=github-compact&title_color=ffffff&bg_color=151515&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+![Jed Blenkhorn's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=jedbillyb&theme=github-compact&title_color=ffffff&bg_color=151515&hide_border=true)
