@@ -10,6 +10,8 @@
 **builder · trader · tinkerer · based in hawkes bay, nz**
 i build things that scratch my own itch - trading bots, discord bots, browser extensions, and the occasional school project.
 
+currently building **[nz vehicle finder](https://vehiclefinder.com)** as my main project rn.
+
 ---
 
 ### investor in
