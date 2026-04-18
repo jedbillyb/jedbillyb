@@ -8,12 +8,36 @@ const HEADER_H = 36;
 const ROW_H    = 36;
 
 const MY_PROJECTS = [
-  { name: 'ticker-svg',        stack: 'Node.js · Express',    desc: 'live animated market ticker for github profiles' },
-  { name: 'ghook',             stack: 'JavaScript · Express', desc: 'github → discord webhook bridge' },
-  { name: 'nz-vehicle-finder', stack: 'React · TS · SQLite',  desc: 'search & filter NZ vehicle listings' },
-  { name: 'Desmos-Tool',       stack: 'JavaScript',           desc: 'chrome/firefox extension for Desmos graphs' },
-  { name: 'vc-notif-bot',      stack: 'JS · Discord.js',      desc: 'voice channel join/leave notifications' },
-  { name: 'faultline mc',      stack: 'PaperMC · Shell',      desc: 'minecraft smp community server' },
+  {
+    name: 'nz-vehicle-finder',
+    stack: 'TypeScript',
+    desc: 'A powerful, high-performance search application for the New Zealand Motor Vehicle Register, featuring a clean terminal-inspired UI, advanced filtering, and automated deployment.'
+  },
+  {
+    name: 'ghook',
+    stack: 'JavaScript',
+    desc: 'Bridge your GitHub repos to Discord! Get instant notifications for pushes, stars, issues, PRs, and more via rich embeds. One-time setup covers all your repositories.'
+  },
+  {
+    name: 'desmos-text-input-output-tool',
+    stack: 'JavaScript',
+    desc: 'Import/export Desmos graphs as JSON - Chrome & Firefox extension'
+  },
+  {
+    name: 'jedbillyb.com',
+    stack: 'TypeScript',
+    desc: 'My personal website'
+  },
+  {
+    name: 'vc-discord-notification-bot',
+    stack: 'JavaScript',
+    desc: 'Discord bot that sends notifications when someone joins, leaves, or switches voice channels'
+  },
+  {
+    name: 'ticker-svg-generator',
+    stack: 'JavaScript',
+    desc: 'Self-hosted stock ticker banner for GitHub READMEs'
+  }
 ];
 
 const FONT = `-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif`;
