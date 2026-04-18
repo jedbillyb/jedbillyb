@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>God-Tier Server Manifest | jedbillyb.com</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --text: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --border: #30363d;
+            --code-bg: #010409;
+            --success: #238636;
+            --danger: #f85149;
+            --warning: #d29922;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 2rem; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        header { border-bottom: 2px solid var(--border); margin-bottom: 3rem; padding-bottom: 1rem; }
+        h1 { color: var(--accent); margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent); margin-top: 4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; text-transform: uppercase; font-size: 1.2rem; }
+        h3 { margin-top: 1.5rem; color: #fff; display: flex; align-items: center; gap: 10px; }
+        
+        .summary-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .summary-item { background: var(--card-bg); border: 1px solid var(--border); padding: 1.2rem; border-radius: 8px; }
+        .stat-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: bold; }
+        .stat-value { font-size: 1.3rem; font-weight: bold; color: var(--accent); }
+
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .meta-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        .meta-table td { padding: 10px; border-bottom: 1px solid #21262d; vertical-align: top; }
+        .meta-table td:first-child { color: var(--text-muted); width: 220px; font-weight: 600; }
+        
+        .code-block { background: var(--code-bg); padding: 1rem; border-radius: 6px; font-family: 'SFMono-Regular', Consolas, monospace; font-size: 0.85rem; overflow-x: auto; border: 1px solid var(--border); color: #d1d5da; white-space: pre-wrap; margin: 10px 0; }
+
+        .badge { font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; font-weight: bold; border: 1px solid currentColor; }
+        .active { color: #3fb950; border-color: #238636; }
+        .inactive { color: #f85149; border-color: #da3633; }
+
+        details { background: #010409; border: 1px solid var(--border); border-radius: 6px; margin: 10px 0; }
+        summary { padding: 12px; cursor: pointer; font-weight: bold; font-size: 0.9rem; }
+        summary:hover { background: #161b22; }
+        .details-content { padding: 1rem; border-top: 1px solid var(--border); }
+        
+        .timestamp { font-size: 0.8rem; color: var(--text-muted); text-align: right; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='timestamp'>Manifest Updated: <!-- UPDATED_AT -->Sat 18 Apr 2026 02:23 UTC<!-- /UPDATED_AT --></div>
+        <header>
+            <h1>Absolute Server Manifest</h1>
+            <p>Full-stack audit of <code>server.jedbillyb.com</code> — Hardware, Security, & Services.</p>
+        </header>
+
+        <div class='summary-bar'>
+            <div class='summary-item'><div class='stat-label'>System Uptime</div><div class='stat-value'><!-- UPTIME -->1 day, 21 hours, 58 minutes<!-- /UPTIME --></div></div>
+            <div class='summary-item'><div class='stat-label'>RAM (Used/Total)</div><div class='stat-value'><!-- RAM -->11Gi / 23Gi<!-- /RAM --></div></div>
+            <div class='summary-item'><div class='stat-label'>Swap Usage</div><div class='stat-value'><!-- SWAP -->0B / 0B<!-- /SWAP --></div></div>
+            <div class='summary-item'><div class='stat-label'>Disk Usage</div><div class='stat-value'><!-- DISK -->21G / 45G (45%)<!-- /DISK --></div></div>
+        </div>
+
+        <h2>I. Systemd Service Catalog</h2>
+        
+        <div class='card'>
+            <h3>Ticker SVG <!-- BADGE_ticker-svg --><span class='badge active'>ACTIVE</span><!-- /BADGE_ticker-svg --></h3>
+            <table class='meta-table'>
+                <tr><td>Internal Port</td><td>3002</td></tr>
+                <tr><td>WorkingDirectory</td><td>/home/ubuntu/ticker-svg/</td></tr>
+                <tr><td>Git Source</td><td>github.com/jedbillyb/stock-banner-svg-generator</td></tr>
+            </table>
+            <details>
+                <summary>Unit File & Environment</summary>
+                <div class='details-content'>
+                    <div class='code-block'>[Unit]\nDescription=ticker-svg\n\n[Service]\nWorkingDirectory=/home/ubuntu/ticker-svg\nExecStart=/usr/bin/node server.js\nEnvironmentFile=/home/ubuntu/ticker-svg/.env</div>
+                    <strong>Env Keys:</strong> <div class='code-block'>PORT, TWELVE_DATA_API_KEY, NODE_ENV</div>
+                </div>
+            </details>
+        </div>
+
+        <div class='card'>
+            <h3>Gateway <!-- BADGE_gateway --><span class='badge active'>ACTIVE</span><!-- /BADGE_gateway --></h3>
+            <table class='meta-table'>
+                <tr><td>Port</td><td>8080</td></tr>
+                <tr><td>WorkingDirectory</td><td>/home/ubuntu/gateway</td></tr>
+                <tr><td>Status</td><td>Local Only</td></tr>
+            </table>
+            <details>
+                <summary>Unit File Content</summary>
+                <div class='details-content'>
+                    <div class='code-block'>[Unit]\nDescription=Node.js API Gateway\n\n[Service]\nUser=root\nWorkingDirectory=/home/ubuntu/gateway\nExecStart=/usr/bin/node index.js</div>
+                </div>
+            </details>
+        </div>
+
+        <div class='card'>
+            <h3>GitHub Discord Bot <!-- BADGE_github-discord-bot --><span class='badge active'>ACTIVE</span><!-- /BADGE_github-discord-bot --></h3>
+            <table class='meta-table'>
+                <tr><td>Port</td><td>3000</td></tr>
+                <tr><td>WorkingDirectory</td><td>/home/ubuntu/github-discord-bot</td></tr>
+            </table>
+            <details>
+                <summary>Unit File & Env Keys</summary>
+                <div class='details-content'>
+                    <div class='code-block'>[Unit]\nDescription=GitHub → Discord Notification Bot\n\n[Service]\nWorkingDirectory=/home/ubuntu/github-discord-bot\nExecStart=/usr/bin/node src/server.js\nEnvironmentFile=/home/ubuntu/github-discord-bot/.env</div>
+                    <strong>Env Keys:</strong> <div class='code-block'>DISCORD_WEBHOOK_URL, GITHUB_WEBHOOK_SECRET, PORT</div>
+                </div>
+            </details>
+        </div>
+
+        <div class='card'>
+            <h3>Profile Server <!-- BADGE_profile-server --><span class='badge active'>ACTIVE</span><!-- /BADGE_profile-server --></h3>
+            <table class='meta-table'>
+                <tr><td>Port</td><td>3003</td></tr>
+                <tr><td>Git Source</td><td>github.com/jedbillyb/jedbillyb</td></tr>
+            </table>
+            <details>
+                <summary>Unit File Content</summary>
+                <div class='details-content'>
+                    <div class='code-block'>[Unit]\nDescription=Personal Profile Table Server\n\n[Service]\nWorkingDirectory=/home/ubuntu/profile-server\nExecStart=/usr/bin/node server.js\nEnvironmentFile=/home/ubuntu/profile-server/.env</div>
+                </div>
+            </details>
+        </div>
+
+        <div class='card'>
+            <h3>Minecraft Server <!-- BADGE_minecraft --><span class='badge active'>ACTIVE (TMUX)</span><!-- /BADGE_minecraft --></h3>
+            <table class='meta-table'>
+                <tr><td>Port</td><td>25565</td></tr>
+                <tr><td>Launch Script</td><td>/home/ubuntu/start-minecraft.sh</td></tr>
+            </table>
+            <details>
+                <summary>Launch Script Content</summary>
+                <div class='details-content'>
+                    <div class='code-block'>java -Xms10G -Xmx10G -XX:+UseG1GC ... -jar paper-1.21.11.jar nogui</div>
+                </div>
+            </details>
+        </div>
+
+        <h2>II. PM2 & Process Details</h2>
+        <div class='card'>
+            <h3>Discord VC Bot <!-- BADGE_pm2_0 --><span class='badge active'>ACTIVE (PM2)</span><!-- /BADGE_pm2_0 --></h3>
+            <table class='meta-table'>
+                <tr><td>PM2 ID</td><td>0</td></tr>
+                <tr><td>WorkingDirectory</td><td>/home/ubuntu/discord-vc-bot</td></tr>
+                <tr><td>Start Command</td><td>node bot.js</td></tr>
+            </table>
+            <details>
+                <summary>Live Process Metrics</summary>
+                <div class='details-content'><div class='code-block'><!-- PM2_INFO_0 -->status: online, cpu: 0.1%, memory: 80.9MB<!-- /PM2_INFO_0 --></div></div>
+            </details>
+        </div>
+
+        <div class='card'>
+            <h3>Vehicle API <!-- BADGE_pm2_1 --><span class='badge active'>ACTIVE (PM2)</span><!-- /BADGE_pm2_1 --></h3>
+            <table class='meta-table'>
+                <tr><td>PM2 ID</td><td>1</td></tr>
+                <tr><td>WorkingDirectory</td><td>/home/ubuntu/nz-vehicle-finder</td></tr>
+                <tr><td>Start Command</td><td>npx tsx server/index.ts</td></tr>
+                <tr><td>Git Source</td><td>github.com/jedbillyb/nz-vehicle-finder</td></tr>
+            </table>
+            <details>
+                <summary>Live Process Metrics</summary>
+                <div class='details-content'><div class='code-block'><!-- PM2_INFO_1 -->status: online, cpu: 0%, memory: 59.0MB<!-- /PM2_INFO_1 --></div></div>
+            </details>
+        </div>
+
+        <h2>III. Tmux Sessions</h2>
+        <div class='card'>
+            <h3>Active Sessions</h3>
+            <div class='code-block'><!-- TMUX_SESSIONS -->discordbot 1 windows
+minecraft 1 windows<!-- /TMUX_SESSIONS --></div>
+        </div>
+
+        <h2>IV. Nginx Routing Map</h2>
+        <div class='card'>
+            <h3>Domain Proxy Table</h3>
+            <table class='meta-table'>
+                <tr><td>vehiclefinder.co.nz</td><td>/</td><td>root ~/nz-vehicle-finder/dist/ (Static)</td></tr>
+                <tr><td>vehiclefinder.co.nz</td><td>/api/</td><td>proxy:3001</td></tr>
+                <tr><td>server.jedbillyb.com</td><td>/setup</td><td>proxy:3003</td></tr>
+                <tr><td>server.jedbillyb.com</td><td>/projects</td><td>proxy:3003</td></tr>
+                <tr><td>server.jedbillyb.com</td><td>/banner</td><td>proxy:3002</td></tr>
+            </table>
+            <details>
+                <summary>Full Nginx Config Dump (nginx -T)</summary>
+                <div class='details-content'><div class='code-block'># /etc/nginx/nginx.conf\nuser www-data;\nworker_processes auto;\n...\n\n# vehiclefinder\nserver {\n    listen 443 ssl;\n    server_name vehiclefinder.co.nz;\n    ...\n}</div></div>
+            </details>
+        </div>
+
+        <h2>V. Security, SSL & Cron</h2>
+        <div class='card'>
+            <h3>SSL Certificate Details</h3>
+            <table class='meta-table'>
+                <tr><td>Domains</td><td>vehiclefinder.co.nz, server.jedbillyb.com</td></tr>
+                <tr><td>Expiry Date</td><td>July 2026</td></tr>
+                <tr><td>Issuer</td><td>Let's Encrypt</td></tr>
+            </table>
+            <h3>IPTables Firewall Summary</h3>
+            <div class='code-block'>1 ACCEPT tcp dpt:3000\n3 ACCEPT tcp dpt:443\n7 ACCEPT tcp dpt:80\n8 ACCEPT udp dpt:25565\n17 ACCEPT tcp dpt:22</div>
+            <h3>Cron Jobs</h3>
+            <table class='meta-table'>
+                <tr><td>/etc/cron.d/</td><td>certbot, e2scrub_all</td></tr>
+                <tr><td>Ubuntu Crontab</td><td>Hourly regenerate-manifest.sh</td></tr>
+            </table>
+        </div>
+
+        <h2>VI. Filesystem Map (Home)</h2>
+        <div class='card'>
+            <div class='code-block'>
+/home/ubuntu/
+├── minecraft/          (4.7G)
+├── nz-vehicle-finder/  (5.5G)
+├── discord-vc-bot/     (27M)
+├── ticker-svg/         (16M)
+├── gateway/            (8.2M)
+├── github-discord-bot/ (4.7M)
+└── profile-server/     (4.8M)</div>
+        </div>
+    </div>
+</body>
+</html>
