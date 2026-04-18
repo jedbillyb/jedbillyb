@@ -53,7 +53,7 @@ app.get('/projects', (req, res) => {
   const H       = HEADER_H + MY_PROJECTS.length * ROW_H;
 
   const COLS = [
-    { label: 'Project',      x: 0,   w: 120, fill: '#FF0000', weight: '600' },
+    { label: 'Project',      x: 0,   w: 120, fill: '#26a641', weight: '600' },
     { label: 'Stack',        x: 197, w: 144, fill: '#c9d1d9', weight: '400' },
     { label: 'What it does', x: 285, w: 336, fill: '#c9d1d9', weight: '400' }, // 480→600, extra 120 all goes here
   ];
