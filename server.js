@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 
 // Global — change these to resize the whole card
-const W        = 990; // was 480
+const W        = 947; // was 480
 const HEADER_H = 36;
 const ROW_H    = 36;
 
@@ -11,7 +11,7 @@ const MY_PROJECTS = [
   {
     name: 'nz-vehicle-finder',
     stack: 'TypeScript',
-    desc: 'A powerful, high-performance search application for the New Zealand Motor Vehicle Register, featuring a clean terminal-inspired UI.'
+    desc: 'A powerful, high-performance search application for the New Zealand Motor Vehicle Register.'
   },
   {
     name: 'ghook',
