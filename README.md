@@ -8,6 +8,7 @@
 [![Pine Script](https://img.shields.io/badge/Pine_Script-2962FF?style=flat-square&logo=tradingview&logoColor=white)](https://jedbillyb.com)
 
 **builder · trader · tinkerer · based in hawkes bay, nz**
+
 i build things that scratch my own itch - trading bots, discord bots, browser extensions, and the occasional school project.
 
 currently building **[nz vehicle finder](https://vehiclefinder.co.nz)** as my main project rn.
