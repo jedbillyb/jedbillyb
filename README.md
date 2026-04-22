@@ -21,7 +21,9 @@ currently building **[nz vehicle finder](https://vehiclefinder.co.nz)** as my ma
 ---
 
 ### things i'm working on
-[![My Projects](http://server.jedbillyb.com/projects)](https://jedbillyb.com?v=2)
+<div align="left">
+<img src="https://server.jedbillyb.com/projects" />
+</div>
 
 ---
 
