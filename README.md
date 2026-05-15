@@ -22,7 +22,7 @@ currently building **[nz vehicle finder](https://vehiclefinder.co.nz)** as my ma
 
 ### things i'm working on
 <div align="left">
-<img src="https://server.jedbillyb.com/projects?v=2" />
+<img src="https://server.jedbillyb.com/projects?v=3" />
 </div>
 
 ---
