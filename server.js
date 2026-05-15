@@ -92,7 +92,7 @@ app.get('/projects', (req, res) => {
     ).join('');
 
     return `
-    <g>
+    <g opacity="0">
       <rect x="0" y="${rowY}" width="${W}" height="${ROW_H}" fill="#151515"/>
       <line x1="0" y1="${rowY + ROW_H}" x2="${W}" y2="${rowY + ROW_H}"
             stroke="#21262d" stroke-width="1"/>
