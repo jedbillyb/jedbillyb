@@ -92,7 +92,7 @@ app.get('/projects', (req, res) => {
     ).join('');
 
     return `
-    <g opacity="0">
+    <g>
       <rect x="0" y="${rowY}" width="${W}" height="${ROW_H}" fill="#151515"/>
       <line x1="0" y1="${rowY + ROW_H}" x2="${W}" y2="${rowY + ROW_H}"
             stroke="#21262d" stroke-width="1"/>
@@ -113,6 +113,7 @@ app.get('/projects', (req, res) => {
   const svg = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"
   fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    ${clipPaths}
     <mask id="card">
       <rect width="${W}" height="${H}" rx="6" ry="6" fill="white"/>
     </mask>
