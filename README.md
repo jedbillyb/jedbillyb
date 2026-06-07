@@ -4,6 +4,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://jedbillyb.com)
 [![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://jedbillyb.com)
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)](https://jedbillyb.com)
+[![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)](https://jedbillyb.com)
 [![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat-square&logo=arch-linux&logoColor=white)](https://jedbillyb.com)
 [![Pine Script](https://img.shields.io/badge/Pine_Script-2962FF?style=flat-square&logo=tradingview&logoColor=white)](https://jedbillyb.com)
 
