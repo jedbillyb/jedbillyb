@@ -21,13 +21,6 @@ currently building **[nz vehicle finder](https://vehiclefinder.co.nz)** as my ma
 
 ---
 
-### things i'm working on
-<div align="left">
-<img src="https://server.jedbillyb.com/projects?v=7" />
-</div>
-
----
-
 ### github stats
 <p>
   <a href="https://jedbillyb.com"><img src="https://github-readme-stats-ten-mu-80.vercel.app/api?username=jedbillyb&show_icons=true&theme=dark&hide_border=true&count_private=true" height="160"/></a>
