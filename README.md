@@ -17,7 +17,7 @@ currently building **[nz vehicle finder](https://vehiclefinder.co.nz)** as my ma
 ---
 
 ### investor in
-[![Market Ticker](https://server.jedbillyb.com/banner/IONQ,QBTS,OKLO,VRT)](https://github.com/jedbillyb/ticker-svg-generator)
+[![Market Ticker](https://server.jedbillyb.com/banner/NU,IONQ,CCJ,RKLB)](https://github.com/jedbillyb/ticker-svg-generator)
 
 ---
 
