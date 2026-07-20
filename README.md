@@ -10,7 +10,7 @@
 </div>
 
 <p align="center"><sub>
-<strong>student · developer · stockbroker</strong><br/>
+<strong>full time student · open source developer · hobbyist stockbroker</strong><br/>
 I build things that solve my own problems: telegram bots, discord bots, websites, browser extensions, etc.<br/>
 Currently maintaining 7 production deployments. Mainly working on <a href="https://vehiclefinder.co.nz">vehiclefinder.co.nz</a>.
 </sub></p>
