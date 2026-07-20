@@ -1,30 +1,35 @@
-# hello, i'm jed 👋 <a href="https://jedbillyb.com"><img align="right" src="https://img.shields.io/badge/jedbillyb.com-000?style=for-the-badge&logo=archlinux&logoColor=blue" /></a>
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://jedbillyb.com)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://jedbillyb.com)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://jedbillyb.com)
-[![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://jedbillyb.com)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)](https://jedbillyb.com)
-[![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)](https://jedbillyb.com)
-[![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat-square&logo=arch-linux&logoColor=white)](https://jedbillyb.com)
-[![Pine Script](https://img.shields.io/badge/Pine_Script-2962FF?style=flat-square&logo=tradingview&logoColor=white)](https://jedbillyb.com)
+<h1 align="center">hello, i'm jed 👋</h1>
 
-**builder · trader · tinkerer · based in hawkes bay, nz**
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="29" alt="python logo" />
+  <img width="5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="29" alt="typescript logo" />
+  <img width="5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="29" alt="javascript logo" />
+  <img width="5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="29" alt="react logo" />
+  <img width="5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="29" alt="nodejs logo" />
+  <img width="5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" height="29" alt="electron logo" />
+  <img width="5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/archlinux/archlinux-original.svg" height="29" alt="arch linux logo" />
+</div>
 
-i build things that scratch my own itch - trading bots, discord bots, browser extensions, and the occasional school project.
+<p align="center"><sub>
+<strong>builder · trader · tinkerer · based in hawkes bay, nz</strong><br/>
+i build things that scratch my own itch — trading bots, discord bots, browser extensions, and the occasional school project.<br/>
+currently building <a href="https://vehiclefinder.co.nz"><strong>nz vehicle finder</strong></a> as my main project rn.
+</sub></p>
 
-currently building **[nz vehicle finder](https://vehiclefinder.co.nz)** as my main project rn.
+<div align="center">
+  <img
+    src="https://streak-stats.demolab.com?user=jedbillyb&theme=dark&hide_border=true"
+    width="40%"
+    alt="GitHub Streak"
+  />
+</div>
 
----
-
-### investor in
-[![Market Ticker](https://server.jedbillyb.com/banner/NU,IONQ,CCJ,RKLB)](https://github.com/jedbillyb/ticker-svg-generator)
-
----
-
-### github stats
-<p>
-  <a href="https://jedbillyb.com"><img src="https://github-readme-stats-ten-mu-80.vercel.app/api?username=jedbillyb&show_icons=true&theme=dark&hide_border=true&count_private=true" height="160"/></a>
-  <a href="https://jedbillyb.com"><img src="https://github-readme-stats-ten-mu-80.vercel.app/api/top-langs/?username=jedbillyb&layout=compact&hide_border=true&theme=dark" height="160"/></a>
+<p align="center">
+  <a href="https://jedbillyb.com"><img src="https://img.shields.io/badge/jedbillyb.com-000?style=for-the-badge&logo=archlinux&logoColor=blue" alt="jedbillyb.com" /></a>
 </p>
-
-[![Jed Blenkhorn's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=jedbillyb&theme=github-compact&title_color=ffffff&bg_color=151515&hide_border=true)](https://jedbillyb.com)
