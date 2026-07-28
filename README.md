@@ -17,7 +17,7 @@ Currently maintaining 7 production deployments. Mainly working on <a href="https
 
 <div align="center">
   <img
-    src="https://streak-stats.demolab.com?user=jedbillyb&theme=dark&hide_border=true&background=0D1117
+    src="https://streak-stats.demolab.com?user=jedbillyb&theme=dark&hide_border=true&background=0D1117"
     width="40%"
     alt="GitHub Streak"
   />
