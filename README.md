@@ -16,9 +16,9 @@ Currently maintaining 7 production deployments. Mainly working on <a href="https
 </sub></p>
 
 <div align="center">
-  <img
-    src="./profile/streak.svg"
-    width="40%"
-    alt="GitHub Streak"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile/streak-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./profile/streak-light.svg" />
+    <img src="./profile/streak-light.svg" width="40%" alt="GitHub Streak" />
+  </picture>
 </div>
